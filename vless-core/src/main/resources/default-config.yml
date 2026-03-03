@@ -1,0 +1,18 @@
+# ===================================
+# VLESS Core — Конфигурация сервера
+# ===================================
+
+server-name: ProxyLoad
+port: 443
+tls-enabled: false
+tls-cert-path: ''
+tls-key-path: ''
+database-file: data.db
+default-token-days: 30
+worker-threads: 0         # 0 = авто
+log-level: INFO
+
+# SOCKS5 прокси
+socks5-enabled: true
+socks5-port: 25000        # ← выдели этот порт в Pterodactyl Allocation
+socks5-auth-enabled: true # true = логин/пароль (токен), false = без авторизации
